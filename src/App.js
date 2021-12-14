@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Logo from "./Components/Logo/logo"
+import AddVeg from "./Components/Add Veg/addveg"
+import AddFruit from "./Components/Add Fruit/addfruit"
+import AddSpice from "./Components/Add Spice/addfile" 
+import AddCanned from "./Components/Add Canned/addCaned"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Logo/>
+     <AddVeg/>
+     <AddFruit/>
+     <AddSpice/>
+     <AddCanned/>
     </div>
   );
 }
