@@ -4,10 +4,10 @@ class AddVeg extends Component {
 constructor (props) {
 super (props);
 this.state = {vegName:"" , array : []} ;
-this.inputValue = this.inputValue.bind(this);
+this.vegValue = this.vegValue.bind(this);
 }
 
-inputValue () {
+vegValue () {
 let inp = document.getElementById("input");
 this.setState({vegName : inp.value});
 this.state.array.push(inp.value);
@@ -18,7 +18,7 @@ inp.value = "" ;
             <div>
                 <p>This is adding veg component</p>
                 <input id="input"></input>
-                <button onClick={this.inputValue}>click</button>
+                <button onClick={this.vegValue}>click</button>
                 <p>{this.state.vegName}</p>
                 <ul>
                     {this.state.array.map((item)=>{

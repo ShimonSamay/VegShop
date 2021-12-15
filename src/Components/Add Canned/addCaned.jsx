@@ -4,10 +4,10 @@ class AddCanned extends react.Component {
     constructor(props){
         super(props);
         this.state = {addcaned:"" , array:[]}
-        this.getValue = this.getValue.bind(this);
+        this.cannedValue = this.cannedValue.bind(this);
         }
         
-        getValue () {
+        cannedValue () {
         let inp = document.getElementById("inp");
         this.setState({addcaned:inp.value});
         this.state.array.push(inp.value);
@@ -19,7 +19,7 @@ class AddCanned extends react.Component {
             <div>
             <p>Canned component</p>
             <input id="inp"></input>
-            <button onClick={this.getValue}>click</button>
+            <button onClick={this.cannedValue}>click</button>
             <p>{this.state.addcaned}</p>
             <ul>
                 {this.state.array.map((item)=>{
