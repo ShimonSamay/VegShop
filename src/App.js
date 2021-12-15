@@ -9,11 +9,11 @@ import AddCanned from "./Components/Add Canned/addCaned"
 function App() {
   return (
     <div className="App">
-     <Logo/>
-     <AddVeg/>
+     {/* <Logo/>
+     <AddVeg/> */}
      <AddFruit/>
-     <AddSpice/>
-     <AddCanned/>
+     {/* <AddSpice/>
+     <AddCanned/> */}
     </div>
   );
 }

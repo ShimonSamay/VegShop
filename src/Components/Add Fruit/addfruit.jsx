@@ -5,20 +5,23 @@ constructor(props){
 super(props);
 this.state = {addfruit:"" , array:[]}
 this.getValue = this.getValue.bind(this);
+this.changeValue = this.changeValue.bind(this) ;
 }
 
 getValue () {
-let inp = document.getElementById("inp");
-this.setState({addfruit:inp.value});
-this.state.array.push(inp.value);
-inp.value = "" ;
+this.state.array.push(this.state.addfruit);
+this.setState({addfruit : this.state.addfruit});
+}
+
+changeValue (event) {
+this.state.addfruit = event.target.value ;
 }
 
 render () {
     return (
     <div>
     <p>Welcome to the fruit shop</p>
-    <input id="inp"></input>
+    <input onChange={this.changeValue}></input>
     <button onClick={this.getValue}>click</button>
     <p>{this.state.addfruit}</p>
     <ul>
