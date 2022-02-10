@@ -11,7 +11,7 @@ this.changeValue = this.changeValue.bind(this) ;
 getValue () {
 this.state.array.push(this.state.addfruit);
 this.setState({addfruit : this.state.addfruit});
-}
+}   
 
 changeValue (event) {
 this.state.addfruit = event.target.value ;
