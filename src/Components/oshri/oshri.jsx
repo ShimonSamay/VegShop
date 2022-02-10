@@ -1,7 +1,10 @@
-import React from 'react';
+import React from "react";
 
 export default function Oshri() {
-  return <div>
-<H1>hI OSHRI</H1>
-  </div>;
+  return (
+    <div>
+      <h1>hI OSHRI</h1>
+      <p>another change</p>
+    </div>
+  );
 }
